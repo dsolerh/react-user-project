@@ -28,7 +28,7 @@ function UsersList({ users }: UserListProps) {
         <UsersCard>
             <ul>
                 {users.map(u=> (
-                    <li>
+                    <li key={u.id}>
                         {u.name} ({u.age} years old)
                     </li>
                 ))}
